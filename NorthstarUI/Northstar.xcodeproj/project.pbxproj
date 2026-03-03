@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A8AA011DABFB1B53D71F3C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389F4C9AA34952E3B577FC2 /* ContentView.swift */; };
+		5BB26AFD19F3839F82A7F798 /* NorthstarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26200C69DEE79FAE4428C248 /* NorthstarKit */; };
+		645E3C33F6B0D885C032849F /* NorthstarComplication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C919AB3BD57C445D1E88C057 /* NorthstarComplication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6ABDB6C88D0FF5A6D72330A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A23A8604827AA651D1FE4 /* ContentView.swift */; };
+		84498E5164497852B3FD9496 /* ComplicationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FF060D03FAB7DF9262C79 /* ComplicationWidget.swift */; };
+		C3AE9D1611B4984C5A7FED5C /* NorthstarWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CEF0C0FB1B68069C87EEA /* NorthstarWatchApp.swift */; };
+		C415B65B30A51F408505DEB4 /* NorthstarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 083B53C824F035A3E182EDCD /* NorthstarKit */; };
+		C9FBE1E3ABFE31DF16039C26 /* NorthstarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05934175B13BBD68B3E680C /* NorthstarWidget.swift */; };
+		DBAA0AECA062312323D18A58 /* NorthstarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1AD3E4880ED5CCC9BFF938 /* NorthstarApp.swift */; };
+		E6E9D3C1BCFAC45B326FF2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1077F460AB935D2DA2158F /* Assets.xcassets */; };
+		E9D6C5D64B465CD728E3D928 /* NorthstarWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 67E23B052D20575D633F3085 /* NorthstarWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF8A0EFEADFB943307E0E606 /* NorthstarKit in Frameworks */ = {isa = PBXBuildFile; productRef = C55D9675AA6C9DC8C0E89367 /* NorthstarKit */; };
+		F5E35E6F6AE10E7F58EAC860 /* NorthstarWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 94EFF6534C951EBEABF0C59E /* NorthstarWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA40CD9287A7CB8107EC4CBE /* NorthstarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8762DE62BB78A9CF25FE7EE4 /* NorthstarKit */; };
+		FA57E5A230F4FBA0DD6958D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB07F36F178A0963CF6B06 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CF2BEB4FFB98CD3AF43BABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23306F907555D595BFA7CA78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51A9ACAB13D893D29FA58B5D;
+			remoteInfo = NorthstarWatch;
+		};
+		AFB5BF28BD27C1B8FDFDF76E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23306F907555D595BFA7CA78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E1C00BEEFAF6EB3F0E5A576;
+			remoteInfo = NorthstarWidget;
+		};
+		C41269FC677B5A4017675B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23306F907555D595BFA7CA78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD10DB28840E0513C9E2EA9F;
+			remoteInfo = NorthstarComplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		053448360909296643F4EA70 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				645E3C33F6B0D885C032849F /* NorthstarComplication.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57159993C735F8AB26D55853 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E9D6C5D64B465CD728E3D928 /* NorthstarWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D985B457D13E2EBAF2602597 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F5E35E6F6AE10E7F58EAC860 /* NorthstarWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		042A23A8604827AA651D1FE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CEB07F36F178A0963CF6B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5389F4C9AA34952E3B577FC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		550FF060D03FAB7DF9262C79 /* ComplicationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationWidget.swift; sourceTree = "<group>"; };
+		5AFBF2F554FBBF7A329C63DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		671CEF0C0FB1B68069C87EEA /* NorthstarWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthstarWatchApp.swift; sourceTree = "<group>"; };
+		67E23B052D20575D633F3085 /* NorthstarWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthstarWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1077F460AB935D2DA2158F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D30B465D187B0F8DDE33337 /* NorthstarKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NorthstarKit; path = ../NorthstarKit; sourceTree = SOURCE_ROOT; };
+		94EFF6534C951EBEABF0C59E /* NorthstarWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NorthstarWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		950AF8378B9EFF28E0FCABAE /* Northstar.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Northstar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C919AB3BD57C445D1E88C057 /* NorthstarComplication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NorthstarComplication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1AD3E4880ED5CCC9BFF938 /* NorthstarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthstarApp.swift; sourceTree = "<group>"; };
+		DA997A10BC84D8C6D1097832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DC6D85BEEB1DB5184826926B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E890026D79FA6D1DC0BCA7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F05934175B13BBD68B3E680C /* NorthstarWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthstarWidget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06A9BA23F05FCAB9CD0C76F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8A0EFEADFB943307E0E606 /* NorthstarKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C688C2FD2989A69513376C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C415B65B30A51F408505DEB4 /* NorthstarKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF06CE5FF9573AB531117EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB26AFD19F3839F82A7F798 /* NorthstarKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34BF78E6D7D47245C591B8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA40CD9287A7CB8107EC4CBE /* NorthstarKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B293DCBE680501C74BD8A2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66E81C53B087C7D86E5C173A /* App */,
+				A6CBA1060A2C869586FD36AC /* Complication */,
+				8CE08161418854191F8FF823 /* Watch */,
+				5B67004BC417E7180E12DF74 /* Widget */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		07DDD3D96C90D5363B98A90E = {
+			isa = PBXGroup;
+			children = (
+				702B6BC2F598F8DD2DD7121C /* Packages */,
+				02B293DCBE680501C74BD8A2 /* Sources */,
+				BAB42F324C5F07F67871DE41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B67004BC417E7180E12DF74 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E890026D79FA6D1DC0BCA7A2 /* Info.plist */,
+				F05934175B13BBD68B3E680C /* NorthstarWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		66E81C53B087C7D86E5C173A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B1077F460AB935D2DA2158F /* Assets.xcassets */,
+				042A23A8604827AA651D1FE4 /* ContentView.swift */,
+				DC6D85BEEB1DB5184826926B /* Info.plist */,
+				CC1AD3E4880ED5CCC9BFF938 /* NorthstarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		702B6BC2F598F8DD2DD7121C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8D30B465D187B0F8DDE33337 /* NorthstarKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		8CE08161418854191F8FF823 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				2CEB07F36F178A0963CF6B06 /* Assets.xcassets */,
+				5389F4C9AA34952E3B577FC2 /* ContentView.swift */,
+				5AFBF2F554FBBF7A329C63DB /* Info.plist */,
+				671CEF0C0FB1B68069C87EEA /* NorthstarWatchApp.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		A6CBA1060A2C869586FD36AC /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				550FF060D03FAB7DF9262C79 /* ComplicationWidget.swift */,
+				DA997A10BC84D8C6D1097832 /* Info.plist */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+		BAB42F324C5F07F67871DE41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				950AF8378B9EFF28E0FCABAE /* Northstar.app */,
+				C919AB3BD57C445D1E88C057 /* NorthstarComplication.appex */,
+				67E23B052D20575D633F3085 /* NorthstarWatch.app */,
+				94EFF6534C951EBEABF0C59E /* NorthstarWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E1C00BEEFAF6EB3F0E5A576 /* NorthstarWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7960317F50ED4032F6D7212D /* Build configuration list for PBXNativeTarget "NorthstarWidget" */;
+			buildPhases = (
+				5A60019AF8884D9CC70FADA2 /* Sources */,
+				8AF06CE5FF9573AB531117EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NorthstarWidget;
+			packageProductDependencies = (
+				26200C69DEE79FAE4428C248 /* NorthstarKit */,
+			);
+			productName = NorthstarWidget;
+			productReference = 94EFF6534C951EBEABF0C59E /* NorthstarWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		506ECFE3D8A75CC22E9EACB7 /* Northstar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D95377B4E341D8192359D9E /* Build configuration list for PBXNativeTarget "Northstar" */;
+			buildPhases = (
+				1FAC62E69E78F24DA770F27A /* Sources */,
+				860724BA29385941E874B9FA /* Resources */,
+				7C688C2FD2989A69513376C6 /* Frameworks */,
+				D985B457D13E2EBAF2602597 /* Embed Foundation Extensions */,
+				57159993C735F8AB26D55853 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84184B7D1074B9C4A7F17DA3 /* PBXTargetDependency */,
+				12946EBBAA06FB4ACCE6C047 /* PBXTargetDependency */,
+			);
+			name = Northstar;
+			packageProductDependencies = (
+				083B53C824F035A3E182EDCD /* NorthstarKit */,
+			);
+			productName = Northstar;
+			productReference = 950AF8378B9EFF28E0FCABAE /* Northstar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		51A9ACAB13D893D29FA58B5D /* NorthstarWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792A27B4FF083546766A9ED7 /* Build configuration list for PBXNativeTarget "NorthstarWatch" */;
+			buildPhases = (
+				CCA6912C96AD96E0D1B5702E /* Sources */,
+				8DEDA003531BF2F4FA1E71F5 /* Resources */,
+				B34BF78E6D7D47245C591B8B /* Frameworks */,
+				053448360909296643F4EA70 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3184748B2B18169B7199E4AF /* PBXTargetDependency */,
+			);
+			name = NorthstarWatch;
+			packageProductDependencies = (
+				8762DE62BB78A9CF25FE7EE4 /* NorthstarKit */,
+			);
+			productName = NorthstarWatch;
+			productReference = 67E23B052D20575D633F3085 /* NorthstarWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD10DB28840E0513C9E2EA9F /* NorthstarComplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60B93808FAC26E1DAC17B3F /* Build configuration list for PBXNativeTarget "NorthstarComplication" */;
+			buildPhases = (
+				8BB3DB9E516ABDDCB68BAF9B /* Sources */,
+				06A9BA23F05FCAB9CD0C76F1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NorthstarComplication;
+			packageProductDependencies = (
+				C55D9675AA6C9DC8C0E89367 /* NorthstarKit */,
+			);
+			productName = NorthstarComplication;
+			productReference = C919AB3BD57C445D1E88C057 /* NorthstarComplication.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23306F907555D595BFA7CA78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3E1C00BEEFAF6EB3F0E5A576 = {
+						DevelopmentTeam = HH84WFR9TU;
+						ProvisioningStyle = Automatic;
+					};
+					506ECFE3D8A75CC22E9EACB7 = {
+						DevelopmentTeam = HH84WFR9TU;
+						ProvisioningStyle = Automatic;
+					};
+					51A9ACAB13D893D29FA58B5D = {
+						DevelopmentTeam = HH84WFR9TU;
+						ProvisioningStyle = Automatic;
+					};
+					FD10DB28840E0513C9E2EA9F = {
+						DevelopmentTeam = HH84WFR9TU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 87E154DACE65568EE4AB8B34 /* Build configuration list for PBXProject "Northstar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 07DDD3D96C90D5363B98A90E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				506ECFE3D8A75CC22E9EACB7 /* Northstar */,
+				FD10DB28840E0513C9E2EA9F /* NorthstarComplication */,
+				51A9ACAB13D893D29FA58B5D /* NorthstarWatch */,
+				3E1C00BEEFAF6EB3F0E5A576 /* NorthstarWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		860724BA29385941E874B9FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E9D3C1BCFAC45B326FF2A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DEDA003531BF2F4FA1E71F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA57E5A230F4FBA0DD6958D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FAC62E69E78F24DA770F27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABDB6C88D0FF5A6D72330A5 /* ContentView.swift in Sources */,
+				DBAA0AECA062312323D18A58 /* NorthstarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A60019AF8884D9CC70FADA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FBE1E3ABFE31DF16039C26 /* NorthstarWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB3DB9E516ABDDCB68BAF9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84498E5164497852B3FD9496 /* ComplicationWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA6912C96AD96E0D1B5702E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8AA011DABFB1B53D71F3C9 /* ContentView.swift in Sources */,
+				C3AE9D1611B4984C5A7FED5C /* NorthstarWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12946EBBAA06FB4ACCE6C047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E1C00BEEFAF6EB3F0E5A576 /* NorthstarWidget */;
+			targetProxy = AFB5BF28BD27C1B8FDFDF76E /* PBXContainerItemProxy */;
+		};
+		3184748B2B18169B7199E4AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD10DB28840E0513C9E2EA9F /* NorthstarComplication */;
+			targetProxy = C41269FC677B5A4017675B14 /* PBXContainerItemProxy */;
+		};
+		84184B7D1074B9C4A7F17DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51A9ACAB13D893D29FA58B5D /* NorthstarWatch */;
+			targetProxy = 1CF2BEB4FFB98CD3AF43BABA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D003E8C13B3838D034B0BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Sources/Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34784A4FE2701D74B27BA915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		781B718809684D9B4B27B863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Sources/Complication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar.watchkitapp.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		8076F0225D1417506E99D222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HH84WFR9TU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		83BC7B4D1E8045CFC540D60E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86303BBA9FC18BA4A052F715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HH84WFR9TU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		A05DA4A09592F40C4BFA7380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				INFOPLIST_FILE = Sources/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		A7DCE31B1C7073D03A4C584B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Sources/Complication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar.watchkitapp.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		BCA7760D726B04C0A47DAFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				INFOPLIST_FILE = Sources/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		DD824331757A05125D921C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Sources/Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.b7sw.northstar.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D95377B4E341D8192359D9E /* Build configuration list for PBXNativeTarget "Northstar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34784A4FE2701D74B27BA915 /* Debug */,
+				83BC7B4D1E8045CFC540D60E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		792A27B4FF083546766A9ED7 /* Build configuration list for PBXNativeTarget "NorthstarWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA7760D726B04C0A47DAFF1 /* Debug */,
+				A05DA4A09592F40C4BFA7380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7960317F50ED4032F6D7212D /* Build configuration list for PBXNativeTarget "NorthstarWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD824331757A05125D921C7C /* Debug */,
+				2D003E8C13B3838D034B0BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87E154DACE65568EE4AB8B34 /* Build configuration list for PBXProject "Northstar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8076F0225D1417506E99D222 /* Debug */,
+				86303BBA9FC18BA4A052F715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E60B93808FAC26E1DAC17B3F /* Build configuration list for PBXNativeTarget "NorthstarComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				781B718809684D9B4B27B863 /* Debug */,
+				A7DCE31B1C7073D03A4C584B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		083B53C824F035A3E182EDCD /* NorthstarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NorthstarKit;
+		};
+		26200C69DEE79FAE4428C248 /* NorthstarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NorthstarKit;
+		};
+		8762DE62BB78A9CF25FE7EE4 /* NorthstarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NorthstarKit;
+		};
+		C55D9675AA6C9DC8C0E89367 /* NorthstarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NorthstarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23306F907555D595BFA7CA78 /* Project object */;
+}

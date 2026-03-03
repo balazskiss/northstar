@@ -1,0 +1,98 @@
+name: Northstar
+
+options:
+  bundleIdPrefix: com.b7sw
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+  createIntermediateGroups: true
+  xcodeVersion: "15.0"
+
+packages:
+  NorthstarKit:
+    path: ../NorthstarKit
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+    DEVELOPMENT_TEAM: HH84WFR9TU
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+
+  # ── iOS App ────────────────────────────────────────────────────────────────
+  Northstar:
+    type: application
+    platform: iOS
+    sources: Sources/App
+    info:
+      path: Sources/App/Info.plist
+      properties:
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.b7sw.northstar
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: NorthstarWatch
+      - target: NorthstarWidget
+      - package: NorthstarKit
+        product: NorthstarKit
+
+  # ── iOS Widget Extension ───────────────────────────────────────────────────
+  NorthstarWidget:
+    type: app-extension
+    platform: iOS
+    sources: Sources/Widget
+    info:
+      path: Sources/Widget/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.b7sw.northstar.widget
+        SKIP_INSTALL: YES
+    dependencies:
+      - package: NorthstarKit
+        product: NorthstarKit
+
+  # ── watchOS App ────────────────────────────────────────────────────────────
+  NorthstarWatch:
+    type: application
+    platform: watchOS
+    sources: Sources/Watch
+    info:
+      path: Sources/Watch/Info.plist
+      properties:
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: com.b7sw.northstar
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.b7sw.northstar.watchkitapp
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: NorthstarComplication
+      - package: NorthstarKit
+        product: NorthstarKit
+
+  # ── watchOS Complication (WidgetKit) ───────────────────────────────────────
+  NorthstarComplication:
+    type: app-extension
+    platform: watchOS
+    sources: Sources/Complication
+    info:
+      path: Sources/Complication/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.b7sw.northstar.watchkitapp.complication
+        SKIP_INSTALL: YES
+    dependencies:
+      - package: NorthstarKit
+        product: NorthstarKit
