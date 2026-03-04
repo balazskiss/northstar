@@ -2,3 +2,6 @@
 xcuserdata
 .DS_Store
 *.xcworkspace
+.env
+node_modules
+.temp
