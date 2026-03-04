@@ -9,7 +9,7 @@ struct ContentView: View {
         List {
             ForEach(provider.metrics, id: \.id) { metric in
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(metric.description)
+                    Text(metric.title)
                         .font(.caption)
                         .foregroundStyle(.secondary)
                     Text(metric.value.isEmpty ? "—" : metric.value)

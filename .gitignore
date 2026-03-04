@@ -2,6 +2,7 @@
 xcuserdata
 .DS_Store
 *.xcworkspace
+*.xcodeproj
 .env
 node_modules
 .temp

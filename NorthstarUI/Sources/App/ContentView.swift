@@ -37,33 +37,3 @@ struct ContentView: View {
         isLoading = false
     }
 }
-
-// MARK: - MetricRow
-
-private struct MetricRow: View {
-    let metric: Metric
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack {
-                Text(metric.description)
-                    .font(.headline)
-                Spacer()
-                Text(metric.value.isEmpty ? "—" : metric.value)
-                    .font(.system(.title2, design: .rounded).bold())
-                    .foregroundStyle(metric.value.isEmpty ? .secondary : .primary)
-            }
-            Text(lastUpdatedText)
-                .font(.caption)
-                .foregroundStyle(.secondary)
-        }
-        .padding(.vertical, 4)
-    }
-
-    private var lastUpdatedText: String {
-        if metric.lastUpdatedAt == .distantPast {
-            return "Not yet synced"
-        }
-        return "Updated \(metric.lastUpdatedAt.formatted(.relative(presentation: .named)))"
-    }
-}

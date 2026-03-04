@@ -32,9 +32,9 @@ private struct TimeAPIResponse: Decodable {
         let now = Date()
         let time = String(format: "%02d:%02d:%02d", hour, minute, seconds)
         return [
-            Metric(id: TimeAPIClient.MetricID.time,      value: time,      description: "Time", lastUpdatedAt: now),
-            Metric(id: TimeAPIClient.MetricID.date,      value: date,      description: "Date", lastUpdatedAt: now),
-            Metric(id: TimeAPIClient.MetricID.dayOfWeek, value: dayOfWeek, description: "Day",  lastUpdatedAt: now),
+            Metric(id: TimeAPIClient.MetricID.time,      title: "Time", value: time,      lastUpdatedAt: now),
+            Metric(id: TimeAPIClient.MetricID.date,      title: "Date", value: date,      lastUpdatedAt: now),
+            Metric(id: TimeAPIClient.MetricID.dayOfWeek, title: "Day",  value: dayOfWeek, lastUpdatedAt: now),
         ]
     }
 }

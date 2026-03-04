@@ -36,14 +36,23 @@ struct NorthstarWidgetView: View {
     var entry: MetricEntry
 
     var body: some View {
-        VStack(spacing: 4) {
-            Text(entry.metric.description)
-                .font(.caption)
+        VStack(spacing: 8) {
+            Text(entry.metric.title)
+                .font(.subheadline.weight(.semibold))
                 .foregroundStyle(.secondary)
-            Text(entry.metric.value)
-                .font(.system(.largeTitle, design: .rounded).bold())
+                .multilineTextAlignment(.center)
+            
+            Text(displayValue)
+                .font(.system(.title, design: .rounded).bold())
+                .foregroundStyle(entry.metric.value.isEmpty ? .tertiary : .primary)
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
         }
         .containerBackground(.fill.tertiary, for: .widget)
+    }
+    
+    private var displayValue: String {
+        entry.metric.value.isEmpty ? "—" : entry.metric.value
     }
 }
 
